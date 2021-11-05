@@ -1,17 +1,17 @@
 <template>
   <div id="container">
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Map ref="map" />
+    <AddCircle />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Map from './components/Map.vue'
+import AddCircle from './components/AddCircle.vue'
 export default {
   name: 'plug',
   components: {
-    HelloWorld
+    Map,AddCircle
   }
 }
 </script>
@@ -23,6 +23,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
